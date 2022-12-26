@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="topgrid">
+            <div class="portrait">
+                <img class='img' src="photos/00070-5464135-disney pixar style man.png" alt="self-portrait">
+            </div>
+
+            <div class="intro">
+                <h2>John Zolton</h2>
+                <p style="text-indent:0px;">
+                    Biomedical Engineer turned Software Developer.
+                </p>
+                <p>
+                    I have a passion for automation and efficiency.
+                </p>
+                <p><a href="photos/tmp0fh65r72.png" download="Resume">Download my resume</a></p>
+                <h2>Check out my projects</h2>
+            </div>
+            
+        </div>
+
+        <div class = 'displaybox' id="display">
+
+            <div class="tile" id="twitter">
+                <img class='img' src="photos/tmpx2ugnsld.png">
+                <div class = 'overlay'>
+                    <div class="text">Twitter Clone Site</div>
+                </div>
+            </div>  
+
+            <div class="tile" id="email">
+                <img class='img' src="photos/tmp1ihjzt5i.png">
+                <div class = 'overlay'>
+                    <div class="text">Single-page Email Client</div>
+                </div>
+            </div>
+
+            <div class="tile" id="commerce">
+                <img class='img' src="photos/tmp_zz87uco.png">
+                <div class = 'overlay'>
+                    <div class="text">E-Commerce Site</div>
+                </div>
+            </div>
+
+
+            <div class="tile" id="advent">
+                <img class='img' src="photos/tmptucwxnzd.png">
+                <div class = 'overlay'>
+                    <div class="text">Advent of Code 2022</div>
+                </div>
+            </div>  
+  
+            <div class="tile" id="speech">
+                <img class='img' src="photos/tmpnja550p1.png">
+                <div class = 'overlay'>
+                    <div class="text">Live Speech Recognition</div>
+                </div>
+            </div>      
+            <div class="tile" id="flashcards">
+                <img class='img' src="photos/tmpj40tatkf.png">
+                <div class = 'overlay'>
+                    <div class="text">Flashcard Desktop App</div>
+                </div>
+            </div>     
+            <div class="tile" id="stanford">
+                <img class='img' src="photos/tmpcz84ll89.png">
+                <div class = 'overlay'>
+                    <div class="text">Stanford Algorithms Specialization</div>
+                </div>
+            </div>   
+              
+
+
+
+ 
+
+
+        </div>
+        
+        <div class= 'project' id="display-twitter" style='display:none'>
+            <div>
+                <h1>Twitter</h1>
+                <p>I built a Twitter clone using Django, SQLite and Javascript.</p>
+                <p>Using models for Users, Tweets, and Follows, I enabled following other users, viewing your follow-feed, and liking and unliking tweets.</p>
+                <p>I used Javascript to handle likes and unlikes, and follows and unfollows so the page doesn't need reloading for every action. I also retrieved the browser cookie via Javascript to enable secure updates.</p>
+                <p>The site is mobile responsive using flex-boxes to maintain appearance and functionality on smaller screens</p>
+                <p>
+                    <a href="https://github.com/JohnZolton/CS50-Web/tree/main/project4">Source Code (Github)</a>
+                </p>
+            </div>
+            <button class="return">Return</button>
+        </div>
+        <div class= 'project' id="display-email" style='display:none'>
+            <div class = 'youtube'>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_qJG0gFttLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+            </div>
+            <h1>Email</h1>
+            <p>I built a single-page email client using Javascript.</p>
+            <p>Javascript detects clicks on the nav bar and hides or shows the desired content.</p>
+            <p>Composing a new email begins with a blank email canvas while replying to an existing email is pre-populated with the recipient and subject.</p>
+            <p>Composed emails are then sent to the server via post request</p>
+            <p>Received emails are fetched from the server and procedurally added to the display. Each email is created as its own elemented and appended to the view. Depending on the viewed or unviewed status of the email, the background is white or gray.</p>
+            <p>Users can also archive and unarchive emails, also achieved via post requests.</p>
+            <p>
+                <a href="https://github.com/JohnZolton/CS50-Web/tree/main/Mail/mail">Source Code (Github)</a>
+            </p>
+            <button class="return">Return</button>
+        </div>
+        <div class= 'project' id="display-commerce" style='display:none'>
+            <div>
+                <div class="youtube">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ux4rXEOuZLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <h1>E-Commerce</h1>
+                <p>
+                    This is an e-commerce web app that uses Django and SQLite3 to run auctions.
+                </p>
+                <p>
+                    The database has models for Users, active listings, bids, and comments. Active listings track the item, current price, and auction expiration date. Bids and comments use the listing object as a foregin key.
+                </p>
+                <p>
+                    The active listings page displayed the item's title, decription, comments (recent first), current highest bid, and status of the auction. If the user created the listing, they can 'close' the auction which disables bidding. If the user has won the item, the page tells them.
+                </p>
+                <p>
+                    Users can also add and remove items from their watchlist. They can also visit a categories page to view active listings by category.
+                </p>
+                <p>
+                    <a href="https://github.com/JohnZolton/CS50-Web/tree/main/commerce">Source Code (Github)</a>
+                </p>
+            </div>
+            <button class="return">Return</button>
+            
+        </div>
+        <div class= 'project' id="display-advent" style='display:none'>
+            <h1>Advent of Code 2022</h1>
+            <p>My solutions for the first 14 days of Advent of Code 2022.</p>
+            <p>My favorite problem was a shortest-path question with an additional constraint. Given a 2D matrix of elevations, an elf was walking to the top of a series of hills, but could only go up one unit of height at a time.</p>
+            <p>I solved it with a BFS solution. Using a queue, I added new locations only if they were an eligible height difference, and tracked their current distance with a tuple ((x,y), distance+1). Eligible tiles added had a distance + 1 of their predecessor.</p>
+            <p>
+                <a href="https://github.com/JohnZolton/Adventofcode2022">Source Code (Github)</a>
+            </p>
+            <button class="return">Return</button>
+        </div>
+        <div class= 'project' id="display-speech" style='display:none'>
+            <h1>Automated Speech Recognition and Voice-to-Voice Chatbots</h1>
+            <p>OpenAI released "Whisper" an open-source speech recognition model. It recognizes speech in a given mp3 file. However, it doesn't function in real time, until now. I achieved "real" time speech recognition using Whisper, python, and multiprocessing.</p>
+            <p>One process uses the microphone to continuously record 5 second audio segments. Then, once a new segment is saved, the transcription process begins, which then recognizes any speech in the audio clip. The transcription process takes roughly 2 seconds so its always ready to transcribe the next incoming audio file.</p>
+            <p>Once I had real-time speech recognition, I used it to create a voice-to-voice chatbot. The chatbot uses open source language models and functions by receiving the transcribed words and then rendering its response.</p>
+            <p>I also created a question-answering bot by monitoring the transcribed text for questions and using another open-source language model to search a corpus of documents for the answer to the question. It worked well for technical, fact questions but was less successful for synthesis or summarization questions.</p>
+            <button class="return">Return</button>
+        </div>
+        <div class= 'project' id="display-stanford" style='display:none'>
+            <h1>Stanford Algorithms Specialization</h1>
+            <img class='img' src="photos/Coursera PCTQY8844WNT-1.png">
+            <p>
+                <a href="https://coursera.org/verify/specialization/PCTQY8844WNT">Verify Certificate</a>
+            </p>
+            <button class="return">Return</button>
+        </div>
+        <div class= 'project' id="display-flashcards" style='display:none'>
+            <h1>Flashcard Desktop App</h1>
+            <p>
+                This is a flashcard app, inspired by Anki and Dr. Andrew Huberman, created using Tkinter.
+            </p>
+            <p>
+                During a study session, random short rest intervals boost learning speed. The neurons activated while studying actually fire faster during this rest interval resulting in stronger memory formation. Additionally, an adrenaline spike signals the brain to remember the events directly before the adrenalien jump. Like when people experience a traumatic event can vividly remember many details. We can take advantage of these biological mechanisms to study more effectively! My favorite memorization tool is Anki, unfortunately it lacked any features to capitalize on these two mechanisms, so I built my own from scratch using Tkinter.
+            </p>
+            <p>
+                Key Features:
+                <ul>
+                    <li>
+                        Random rest intervals after a completed card. This boosts memory and learning speed. <a href="https://www.auxoro.com/blog/learn-skills-faster-andrew-hubereman-neuroscience">Overview</a>, <a href="https://www.sciencedirect.com/science/article/pii/S2211124721005398">Study</a>.
+                    </li>
+                    <li>
+                        Randomly flashes a scary picture. This causes an adrenaline jump which signals the brain to remember the events immediately before. <a href="https://www.youtube.com/watch?v=JPX8g8ibKFc&t=3422s">Source: Dr. Andrew Huberman</a>.
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Features:
+                <ul>
+                    <li>
+                        Select a deck of flashcards to use (as a CSV)
+                    </li>
+                    <li>
+                        Set # of cards desired to study
+                    </li>
+                    <li>
+                        Sorts cards by due date, displays front of card, and progress bar representing completed cards, and allows editing the front and back of the current card
+                    </li>
+                    <li>
+                        Once answer is shown, rate the card as easy, medium or hard and the next card is displayed
+                        <ul>
+                            <li>
+                                Easys are removed from the pile and the progress bar updates
+                            </li>
+                            <li>
+                                Mediums will be shown again after 5 cards
+                            </li>
+                            <li>
+                                Hards will be shown again after 3 cards
+                            </li>
+                        </ul>
+                        
+                    </li>
+                    <li>
+                        Bound keys to buttons for ease of use (ex: spacebar = next)
+                    </li>
+                    <li>
+                        Cards are tracked using due dates, cards without due dates are assigned as due today. Once a card is marked 'easy' its due date is updated to three days from now. The CSV is sorted according to due date so the earliest "due" cards are selected.
+                    </li>
+                    <li>
+                        Saves progress upon closing the window by writing the updated flashcard deck to the original CSV file
+                    </li>
+                </ul>
+            </p>
+            <p>Anki decks can be exported as a tab deliminated text file. Converter.py converts this file to CSV format.            </p>
+            <p><a href='https://github.com/JohnZolton/flashcards'>Code (Github)</a></p>
+            <button class="return">Return</button>
+        </div>
+        <div class= 'project' id="display-cs50-ai" style='display:none'>
+            <button class="return">Return</button>
+            project goes here
+        </div>
+        <div class= 'project' id="display-cs50-python" style='display:none'>
+            <button class="return">Return</button>
+            project goes here
+        </div>
+        <div class= 'project' id="display-cs50" style='display:none'>
+            <button class="return">Return</button>
+            project goes here
+        </div>
+        <div class= 'project' id="display-sentiment" style='display:none'>
+            <button class="return">Return</button>
+            project goes here
+        </div>
+
+        <script src="portfolio.js"></script>
+    </body>
+</html>
