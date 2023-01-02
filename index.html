@@ -4,6 +4,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv='cache-control' content='no-cache'> 
+        <meta http-equiv='expires' content='0'> 
+        <meta http-equiv='pragma' content='no-cache'>
         <title>Portfolio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +15,7 @@
     <body>
         <div class="topgrid">
             <div class="portrait">
-                <img class='img' src="photos/00070-5464135-disney pixar style man.png" alt="self-portrait">
+                <img class='img' src="photos/profilepic.jpg" alt="self-portrait">
             </div>
 
             <div class="intro">
@@ -23,7 +26,7 @@
                 <p>
                     I have a passion for automation and efficiency.
                 </p>
-                <p><a href="photos/John Zolton_Resume.pdf" download="Resume">Download my resume.</a></p>
+                <p><a href="photos/John Zolton_Resume.pdf" download="Resume">Download my resume</a></p>
                 <h2>Check out my projects</h2>
             </div>
             
@@ -78,18 +81,12 @@
                     <div class="text">Stanford Algorithms Specialization</div>
                 </div>
             </div>   
-              
-
-
-
- 
-
-
         </div>
         
         <div class= 'project' id="display-twitter" style='display:none'>
             <div>
                 <h1>Twitter</h1>
+                <p><img src='gifs/2023-01-01-13-24-19.gif' width="600px;"></p>
                 <p>I built a Twitter clone using Django, SQLite and Javascript.</p>
                 <p>Using models for Users, Tweets, and Follows, I enabled following other users, viewing your follow-feed, and liking and unliking tweets.</p>
                 <p>I used Javascript to handle likes and unlikes, and follows and unfollows so the page doesn't need reloading for every action. I also retrieved the browser cookie via Javascript to enable secure updates.</p>
@@ -100,28 +97,10 @@
             </div>
             <button class="return">Return</button>
         </div>
-        <div class= 'project' id="display-email" style='display:none'>
-            <div class = 'youtube'>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_qJG0gFttLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-            </div>
-            <h1>Email</h1>
-            <p>I built a single-page email client using Javascript.</p>
-            <p>Javascript detects clicks on the nav bar and hides or shows the desired content.</p>
-            <p>Composing a new email begins with a blank email canvas while replying to an existing email is pre-populated with the recipient and subject.</p>
-            <p>Composed emails are then sent to the server via post request</p>
-            <p>Received emails are fetched from the server and procedurally added to the display. Each email is created as its own elemented and appended to the view. Depending on the viewed or unviewed status of the email, the background is white or gray.</p>
-            <p>Users can also archive and unarchive emails, also achieved via post requests.</p>
-            <p>
-                <a href="https://github.com/JohnZolton/CS50-Web/tree/main/Mail/mail">Source Code (Github)</a>
-            </p>
-            <button class="return">Return</button>
-        </div>
         <div class= 'project' id="display-commerce" style='display:none'>
             <div>
-                <div class="youtube">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ux4rXEOuZLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
                 <h1>E-Commerce</h1>
+                <p><img src="gifs/2023-01-01-13-07-12.gif" width="600px"></p>
                 <p>
                     This is an e-commerce web app that uses Django and SQLite3 to run auctions.
                 </p>
@@ -141,6 +120,23 @@
             <button class="return">Return</button>
             
         </div>
+        <div class= 'project' id="display-email" style='display:none'>
+            <h1>Email</h1>
+            <p>
+                <img src="gifs/2023-01-01-13-40-20.gif" width="600px">
+            </p>
+            <p>I built a single-page email client using Javascript.</p>
+            <p>Javascript detects clicks on the nav bar and hides or shows the desired content.</p>
+            <p>Composing a new email begins with a blank email canvas while replying to an existing email is pre-populated with the recipient and subject.</p>
+            <p>Composed emails are then sent to the server via post request</p>
+            <p>Received emails are fetched from the server and procedurally added to the display. Each email is created as its own elemented and appended to the view. Depending on the viewed or unviewed status of the email, the background is white or gray.</p>
+            <p>Users can also archive and unarchive emails, also achieved via post requests.</p>
+            <p>
+                <a href="https://github.com/JohnZolton/CS50-Web/tree/main/Mail/mail">Source Code (Github)</a>
+            </p>
+            <button class="return">Return</button>
+        </div>
+
         <div class= 'project' id="display-advent" style='display:none'>
             <h1>Advent of Code 2022</h1>
             <p>My solutions for the first 14 days of Advent of Code 2022.</p>
@@ -157,6 +153,9 @@
             <p>One process uses the microphone to continuously record 5 second audio segments. Then, once a new segment is saved, the transcription process begins, which then recognizes any speech in the audio clip. The transcription process takes roughly 2 seconds so its always ready to transcribe the next incoming audio file.</p>
             <p>Once I had real-time speech recognition, I used it to create a voice-to-voice chatbot. The chatbot uses open source language models and functions by receiving the transcribed words and then rendering its response.</p>
             <p>I also created a question-answering bot by monitoring the transcribed text for questions and using another open-source language model to search a corpus of documents for the answer to the question. It worked well for technical, fact questions but was less successful for synthesis or summarization questions.</p>
+            <p>
+                <a href="https://github.com/JohnZolton/scribe">Source Code (Github)</a>
+            </p>
             <button class="return">Return</button>
         </div>
         <div class= 'project' id="display-stanford" style='display:none'>
