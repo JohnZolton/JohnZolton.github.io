@@ -33,6 +33,12 @@
         </div>
 
         <div class = 'displaybox' id="display">
+            <div class="tile" id="fitness">
+                <img class='img' src="photos/tmpzcd616kd.png">
+                <div class = 'overlay'>
+                    <div class="text">Fitness Tracking</div>
+                </div>
+            </div>
             <div class="tile" id="commerce">
                 <img class='img' src="photos/tmp_zz87uco.png">
                 <div class = 'overlay'>
@@ -82,7 +88,36 @@
                 </div>
             </div>   
         </div>
-        
+        <div class="project" id="display-fitness" style="display:none">
+            <div>
+                <h1>MyFitessBuddy</h1>
+                <div><p>This is myfitnessBuddy, a nutrition and general health tracking website (like myfitnesspal).  </p>
+
+<p>Key features include: automatic syncing with smartwatch health data, querying nutrition data from USDA food database, and customizable nutrition goals.</p>
+
+<p>The search bar uses JavaScript to fetch data results for the desired food. An autocomplete dropdown menu is enabled by listening for keystrokes and sending the current query to the USDA database and the results are appended to the search element. Upon the next keystroke, the previous results are destroyed and replaced with the new query. </p>
+
+<p>Once a search is performed the user can add any resulting food and quantity to their daily log. This is enabled with JavaScript, with edit and remove buttons in case a user makes a mistake or changes their plan. The daily totals and progress bars for nutrition data are also updated upon any change in the food log. </p>
+
+<p>User preferences, goals are stored in a User model while each day's health metrics (steps, bodyweight, and nutrition) are kept in a Metrics model, that's constrained to be unique based on the User and the date. </p>
+
+<p>Users can update their settings on the settings page. They can change their macronutrient targets (protein, carbs, fats) and fiber, as well as sync their step counts from their smartwatch. Currently only Garmin smartwatches are supported. Sadly Garmin only gives API keys to companies so I had to get creative to solve this. I found an API wrapper, Python: Garmin Connect, that allows you to make request data for your Garmin account. Users can manually sync their step data, or they can set up automatic syncing. With automatic syncing enabled, the program will collect the previous days step data (the current days data isn't available on Garmin Connect yet). </p>
+
+<p>Users are prompted for their bodyweight on each new day.</p>
+
+<p>Daily total steps, bodyweight, and calories are displayed on three charts using Chart.js. </p>
+
+<p>The layout is responsively designed with flexboxes, to accommodate varying device sizes. Users can also choose between a light and dark theme. </p>
+
+<p> </p>
+
+</div>
+                <a href="https://github.com/JohnZolton/fitness">Source Code (Github)</a>
+            <div>
+                <button class="return">Return</button>
+            </div>
+            </div>
+        </div>
         <div class= 'project' id="display-twitter" style='display:none'>
             <div>
                 <h1>Twitter</h1>
@@ -100,7 +135,6 @@
         <div class= 'project' id="display-commerce" style='display:none'>
             <div>
                 <h1>E-Commerce</h1>
-                <h2>Site Demo</h2>
                 <p><img src="gifs/2023-01-01-13-07-12.gif" width="600px"></p>
                 <p>
                     This is an e-commerce web app that uses Django and SQLite3 to run auctions.
@@ -108,8 +142,6 @@
                 <p>
                     Users can enable/disable two-factor authentication for secure login using time-based one-time passwords. Users can scan a generated QR code to link their 2FA app like Google's Authenticator. Users can also change their username, email and password from the settings page.
                 </p>
-                <h2>Settings Demo</h2>
-                <p><img src="gifs/Untitled-Project.gif" width="600px"></p>
                 <p>
                     The database has models for Users, active listings, bids, and comments. Active listings track the item, current price, and auction expiration date. Bids and comments use the listing object as a foregin key.
                 </p>
@@ -134,7 +166,7 @@
             <p>I built a single-page email client using Javascript.</p>
             <p>Javascript detects clicks on the nav bar and hides or shows the desired content.</p>
             <p>Composing a new email begins with a blank email canvas while replying to an existing email is pre-populated with the recipient and subject.</p>
-            <p>Composed emails are then sent to the server via post request.</p>
+            <p>Composed emails are then sent to the server via post request</p>
             <p>Received emails are fetched from the server and procedurally added to the display. Each email is created as its own elemented and appended to the view. Depending on the viewed or unviewed status of the email, the background is white or gray.</p>
             <p>Users can also archive and unarchive emails, also achieved via post requests.</p>
             <p>
